@@ -7,8 +7,11 @@
     descriptive statistics.
 """
 
-from src.preprocess.load_ct import load_ct, MetaData
 
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..'))
+from preprocess.load_ct import load_ct, MetaData
 import numpy as np
 import os
 import scipy.ndimage
